@@ -3,7 +3,7 @@
 ## Overview
 
 This project implements the conversion of infix expressions to postfix expressions using a stack in C.
-It processes operands, operators, and parentheses while considering operator precedence and associativity to generate the equivalent postfix expressi
+It processes operands, operators, and parentheses while considering operator precedence and associativity to generate the equivalent postfix expression.
 
 ## Key Concepts
 
