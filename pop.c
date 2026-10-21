@@ -1,10 +1,9 @@
 #include "functions.h"
 
-char stack[100];
-int top = -1;
-
-void push(char ch)
+char pop(void)
 {
-    top++;
-    stack[top] = ch;
+    char ch;
+    ch = stack[top];
+    top--;
+    return ch;
 }
