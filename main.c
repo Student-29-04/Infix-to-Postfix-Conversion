@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "functions.h"
 #include <string.h>
 
 char stack[100];
@@ -69,28 +70,4 @@ int main()
     return 0;
 }
 
-void push(char ch)
-{
-    top++;
-    stack[top] = ch;
-}
 
-char pop()
-{
-    char ch;
-    ch = stack[top];
-    top--;
-    return ch;
-}
-
-int precedence(char ch)
-{
-    if (ch == '^')
-        return 3;
-    else if (ch == '*' || ch == '/' || ch == '%')
-        return 2;
-    else if (ch == '+' || ch == '-')
-        return 1;
-
-    return 0;
-}
