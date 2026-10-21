@@ -1,4 +1,4 @@
-CC = gcc
+CC =	gcc
 CFLAGS = -Wall
 
 all: main.c push.c pop.c precedence.c
