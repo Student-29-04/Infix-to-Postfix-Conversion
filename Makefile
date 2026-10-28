@@ -1,8 +1,14 @@
-CC =	gcc
-CFLAGS = -Wall
+a.out: main.o push.o pop.o precedence.o
+	gcc main.o push.o pop.o precedence.o
 
-all: main.c push.c pop.c precedence.c
-	gcc main.c push.c pop.c precedence.c -o infix_to_postfix
+main.o: main.c
+	gcc -c main.c
 
-clean:
-	rm -f infix_to_postfix
+push.o: push.c
+	gcc -c push.c
+
+pop.o: pop.c
+	gcc -c pop.c
+
+precedence.o: precedence.c
+	gcc -c precedence.c
